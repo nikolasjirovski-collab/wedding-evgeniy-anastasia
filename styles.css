@@ -166,15 +166,20 @@ h2 {
 h1 {
   max-width: 900px;
   margin: 0 auto;
-  font-family: "Lobster", "Marck Script", cursive;
-  font-size: 4.75rem;
-  line-height: 0.98;
+  font-family: "Bikham Cyr Script", "Bickham Script Pro", "Marck Script", cursive;
+  font-size: 5rem;
+  line-height: 0.96;
   font-weight: 400;
   text-wrap: balance;
   overflow-wrap: anywhere;
   color: var(--ivory);
   text-shadow: 0 9px 26px rgba(0, 0, 0, 0.62);
   animation: titleGlow 5.5s ease-in-out infinite;
+}
+
+h1 span {
+  display: block;
+  white-space: nowrap;
 }
 
 h2 {
@@ -636,7 +641,7 @@ p {
 
 @media (min-width: 980px) {
   h1 {
-    font-size: 6.65rem;
+    font-size: 7rem;
   }
 
   h2 {
@@ -646,7 +651,7 @@ p {
 
 @media (min-width: 1280px) {
   h1 {
-    font-size: 7.45rem;
+    font-size: 7.85rem;
   }
 }
 
@@ -681,7 +686,7 @@ p {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.08rem;
     line-height: 1;
   }
 
@@ -742,7 +747,7 @@ p {
 
 @media (max-width: 420px) {
   h1 {
-    font-size: 3.05rem;
+    font-size: 2.92rem;
   }
 
   h2 {
