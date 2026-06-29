@@ -454,12 +454,6 @@ p {
   background: var(--ivory);
 }
 
-.button-light {
-  color: var(--ivory);
-  border-color: rgba(255, 250, 242, 0.42);
-  background: transparent;
-}
-
 .finish-section {
   position: relative;
   padding: 122px 0 132px;
