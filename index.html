@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Свадьба Евгения и Анастасии. 11.09.2026, Банкетный зал Колизей, Советский просп., 35А."
+    />
+    <title>Свадьба Евгения и Анастасии</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Навигация по приглашению">
+      <a class="brand-mark" href="#top" aria-label="В начало">Е&nbsp;+&nbsp;А</a>
+      <nav class="nav-links" aria-label="Основные разделы">
+        <a href="#details">Дата и место</a>
+        <a href="#mood">Атмосфера</a>
+        <a href="#finish">Контакты</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero-photo" aria-hidden="true">
+          <source media="(max-width: 720px)" srcset="assets/couple-mobile.jpg" />
+          <img src="assets/couple.jpg" alt="" />
+        </picture>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Мы женимся</p>
+          <h1 id="hero-title">Свадьба Евгения и Анастасии</h1>
+          <div class="hero-meta" aria-label="Дата и место свадьбы">
+            <time datetime="2026-09-11">11.09.2026</time>
+            <span>Банкетный зал Колизей, Советский просп., 35А</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#details">Смотреть детали</a>
+            <a class="button button-ghost" href="wedding.ics" download>Добавить в календарь</a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#details" aria-label="Перейти к деталям">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="details-section" id="details" aria-labelledby="details-title">
+        <div class="section-shell details-grid">
+          <div class="details-copy reveal">
+            <p class="section-kicker">Сохраните дату</p>
+            <h2 id="details-title">11 сентября 2026</h2>
+            <p>
+              В этот день мы будем рады разделить с вами один из самых важных
+              моментов нашей истории.
+            </p>
+          </div>
+
+          <div class="info-panel reveal" aria-label="Главная информация">
+            <div>
+              <span>Дата</span>
+              <strong>11.09.2026</strong>
+            </div>
+            <div>
+              <span>Место</span>
+              <strong>Банкетный зал Колизей</strong>
+            </div>
+            <div>
+              <span>Адрес</span>
+              <strong>Советский просп., 35А</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown-section" aria-labelledby="countdown-title">
+        <div class="section-shell countdown-wrap reveal">
+          <p class="section-kicker">До встречи</p>
+          <h2 id="countdown-title">Считаем дни до свадьбы</h2>
+          <div class="countdown" data-countdown aria-live="polite">
+            <div>
+              <strong data-days>00</strong>
+              <span>дней</span>
+            </div>
+            <div>
+              <strong data-hours>00</strong>
+              <span>часов</span>
+            </div>
+            <div>
+              <strong data-minutes>00</strong>
+              <span>минут</span>
+            </div>
+            <div>
+              <strong data-seconds>00</strong>
+              <span>секунд</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section" id="mood" aria-labelledby="mood-title">
+        <div class="section-shell story-grid">
+          <div class="polaroid-stack reveal" aria-hidden="true">
+            <figure class="polaroid">
+              <img src="assets/couple-small.jpg" alt="" />
+              <figcaption>Мы женимся!</figcaption>
+            </figure>
+          </div>
+
+          <div class="story-copy reveal">
+            <p class="section-kicker">Атмосфера вечера</p>
+            <h2 id="mood-title">Тепло, красиво и по-настоящему</h2>
+            <p>
+              Мы хотим собрать близких людей за одним столом, провести вечер без
+              лишней суеты и оставить в памяти много живых, светлых моментов.
+            </p>
+            <div class="palette" aria-label="Палитра вечера">
+              <span class="swatch swatch-ivory" title="Айвори"></span>
+              <span class="swatch swatch-gold" title="Золото"></span>
+              <span class="swatch swatch-rose" title="Пудровый"></span>
+              <span class="swatch swatch-olive" title="Оливковый"></span>
+              <span class="swatch swatch-ink" title="Графит"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="place-section" aria-labelledby="place-title">
+        <div class="section-shell place-grid">
+          <div class="place-card reveal">
+            <p class="section-kicker">Место</p>
+            <h2 id="place-title">Банкетный зал Колизей</h2>
+            <p>Советский просп., 35А</p>
+          </div>
+          <div class="place-actions reveal">
+            <a
+              class="button button-dark"
+              href="https://yandex.ru/maps/?text=%D0%91%D0%B0%D0%BD%D0%BA%D0%B5%D1%82%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%B0%D0%BB%20%D0%9A%D0%BE%D0%BB%D0%B8%D0%B7%D0%B5%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF.%2C%2035%D0%90"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Открыть карту
+            </a>
+            <a class="button button-light" href="wedding.ics" download>Скачать событие</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="finish-section" id="finish" aria-labelledby="finish-title">
+        <div class="section-shell finish-content reveal">
+          <p class="script-line">Ждем вас</p>
+          <h2 id="finish-title">Евгений &amp; Анастасия</h2>
+          <p>11.09.2026</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

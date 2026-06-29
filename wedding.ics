@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Evgeniy Anastasia Wedding//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20260911-evgeniy-anastasia-wedding
+DTSTAMP:20260629T120000Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Свадьба Евгения и Анастасии
+LOCATION:Банкетный зал Колизей, Советский просп., 35А
+DESCRIPTION:Свадьба Евгения и Анастасии. 11.09.2026. Банкетный зал Колизей, Советский просп., 35А.
+END:VEVENT
+END:VCALENDAR
