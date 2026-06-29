@@ -11,21 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" aria-label="Навигация по приглашению">
-      <a class="brand-mark" href="#top" aria-label="В начало">Е&nbsp;+&nbsp;А</a>
-      <nav class="nav-links" aria-label="Основные разделы">
-        <a href="#details">Дата и место</a>
-        <a href="#mood">Атмосфера</a>
-        <a href="#finish">Контакты</a>
-      </nav>
-    </header>
-
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <picture class="hero-photo" aria-hidden="true">
@@ -33,27 +24,26 @@
           <img src="assets/couple.jpg" alt="" />
         </picture>
         <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content reveal">
-          <p class="eyebrow">Мы женимся</p>
-          <h1 id="hero-title">Свадьба Евгения и Анастасии</h1>
-          <div class="hero-meta" aria-label="Дата и место свадьбы">
-            <time datetime="2026-09-11">11.09.2026</time>
-            <span>Банкетный зал Колизей, Советский просп., 35А</span>
-          </div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#details">Смотреть детали</a>
-            <a class="button button-ghost" href="wedding.ics" download>Добавить в календарь</a>
-          </div>
+        <div class="magic-field" aria-hidden="true">
+          <span style="--x: 9%; --y: 18%; --s: 7px; --d: 0s"></span>
+          <span style="--x: 18%; --y: 72%; --s: 4px; --d: 1.4s"></span>
+          <span style="--x: 28%; --y: 32%; --s: 5px; --d: 2.8s"></span>
+          <span style="--x: 38%; --y: 83%; --s: 8px; --d: 0.8s"></span>
+          <span style="--x: 47%; --y: 18%; --s: 4px; --d: 3.2s"></span>
+          <span style="--x: 58%; --y: 66%; --s: 6px; --d: 1.8s"></span>
+          <span style="--x: 66%; --y: 28%; --s: 8px; --d: 0.4s"></span>
+          <span style="--x: 76%; --y: 77%; --s: 4px; --d: 2.2s"></span>
+          <span style="--x: 88%; --y: 20%; --s: 6px; --d: 3.6s"></span>
+          <span style="--x: 92%; --y: 62%; --s: 5px; --d: 1s"></span>
         </div>
-        <a class="scroll-cue" href="#details" aria-label="Перейти к деталям">
-          <span></span>
-        </a>
+        <div class="hero-content reveal">
+          <h1 id="hero-title">Свадьба Евгения и Анастасии</h1>
+        </div>
       </section>
 
       <section class="details-section" id="details" aria-labelledby="details-title">
         <div class="section-shell details-grid">
           <div class="details-copy reveal">
-            <p class="section-kicker">Сохраните дату</p>
             <h2 id="details-title">11 сентября 2026</h2>
             <p>
               В этот день мы будем рады разделить с вами один из самых важных
@@ -104,28 +94,16 @@
       </section>
 
       <section class="story-section" id="mood" aria-labelledby="mood-title">
-        <div class="section-shell story-grid">
-          <div class="polaroid-stack reveal" aria-hidden="true">
-            <figure class="polaroid">
-              <img src="assets/couple-small.jpg" alt="" />
-              <figcaption>Мы женимся!</figcaption>
-            </figure>
-          </div>
-
-          <div class="story-copy reveal">
-            <p class="section-kicker">Атмосфера вечера</p>
-            <h2 id="mood-title">Тепло, красиво и по-настоящему</h2>
-            <p>
-              Мы хотим собрать близких людей за одним столом, провести вечер без
-              лишней суеты и оставить в памяти много живых, светлых моментов.
-            </p>
-            <div class="palette" aria-label="Палитра вечера">
-              <span class="swatch swatch-ivory" title="Айвори"></span>
-              <span class="swatch swatch-gold" title="Золото"></span>
-              <span class="swatch swatch-rose" title="Пудровый"></span>
-              <span class="swatch swatch-olive" title="Оливковый"></span>
-              <span class="swatch swatch-ink" title="Графит"></span>
-            </div>
+        <div class="section-shell story-wrap reveal">
+          <p class="section-kicker">Атмосфера вечера</p>
+          <h2 id="mood-title">Тепло, красиво и по-настоящему</h2>
+          <p>
+            Мы хотим собрать близких людей за одним столом, провести вечер без
+            лишней суеты и оставить в памяти много живых, светлых моментов.
+          </p>
+          <div class="palette" aria-label="Палитра вечера">
+            <span class="swatch swatch-ivory" title="Белый"></span>
+            <span class="swatch swatch-ink" title="Черный"></span>
           </div>
         </div>
       </section>
@@ -152,6 +130,7 @@
       </section>
 
       <section class="finish-section" id="finish" aria-labelledby="finish-title">
+        <div class="finish-sparks" aria-hidden="true"></div>
         <div class="section-shell finish-content reveal">
           <p class="script-line">Ждем вас</p>
           <h2 id="finish-title">Евгений &amp; Анастасия</h2>
