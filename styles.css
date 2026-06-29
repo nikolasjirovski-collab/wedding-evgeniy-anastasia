@@ -306,12 +306,23 @@ p {
   align-items: center;
 }
 
+.details-grid-single {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+  text-align: center;
+}
+
 .details-copy p,
 .story-wrap p,
 .place-card p,
 .finish-content p {
   max-width: 620px;
   color: var(--muted);
+}
+
+.details-grid-single .details-copy p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info-panel {
