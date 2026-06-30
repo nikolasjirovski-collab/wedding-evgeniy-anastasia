@@ -377,15 +377,6 @@ p {
   overflow: hidden;
 }
 
-.countdown-section::before {
-  content: "";
-  position: absolute;
-  inset: 18px;
-  border: 1px solid rgba(255, 250, 242, 0.16);
-  pointer-events: none;
-  animation: borderBreath 5s ease-in-out infinite;
-}
-
 .countdown-wrap {
   position: relative;
   text-align: center;
@@ -484,7 +475,8 @@ p {
 }
 
 .story-wrap h2,
-.story-wrap .dress-code h3 {
+.story-wrap .dress-code h3,
+.story-wrap .day-program h3 {
   color: var(--ivory);
 }
 
@@ -497,7 +489,8 @@ p {
   margin-top: 42px;
 }
 
-.dress-code h3 {
+.dress-code h3,
+.day-program h3 {
   margin: 0;
   font-family: var(--text-serif);
   font-size: clamp(2rem, 5vw, 3.4rem);
@@ -530,6 +523,82 @@ p {
   background: #171513;
   border-color: rgba(255, 250, 242, 0.52);
   animation-delay: -2.3s;
+}
+
+.day-program {
+  margin-top: 56px;
+}
+
+.timeline {
+  display: grid;
+  gap: 0;
+  width: min(560px, 100%);
+  margin: 30px auto 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: minmax(74px, 0.34fr) 42px minmax(0, 1fr);
+  align-items: start;
+  min-height: 76px;
+  text-align: left;
+}
+
+.timeline-item time {
+  padding-top: 1px;
+  color: rgba(255, 250, 242, 0.92);
+  font-family: var(--text-serif);
+  font-size: 1.34rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.timeline-item p {
+  margin: 0;
+  color: rgba(255, 250, 242, 0.78);
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.timeline-marker {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  min-height: 76px;
+}
+
+.timeline-marker::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+  border: 1px solid rgba(255, 250, 242, 0.86);
+  border-radius: 50%;
+  background: rgba(199, 173, 124, 0.92);
+  box-shadow:
+    0 0 0 5px rgba(199, 173, 124, 0.12),
+    0 0 18px rgba(255, 250, 242, 0.32);
+}
+
+.timeline-marker::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.56), rgba(199, 173, 124, 0.18));
+}
+
+.timeline-item:last-child {
+  min-height: auto;
+}
+
+.timeline-item:last-child .timeline-marker {
+  min-height: 24px;
+}
+
+.timeline-item:last-child .timeline-marker::after {
+  display: none;
 }
 
 .place-section {
@@ -583,19 +652,12 @@ p {
 .finish-section {
   position: relative;
   padding: 122px 0 132px;
+  color: var(--ivory);
   text-align: center;
   background:
-    linear-gradient(180deg, rgba(248, 244, 238, 0.88), rgba(255, 250, 242, 0.95)),
-    url("assets/couple-small.jpg") center 38% / cover;
+    linear-gradient(135deg, rgba(23, 21, 19, 0.98), rgba(39, 35, 31, 0.96)),
+    var(--ink);
   overflow: hidden;
-}
-
-.finish-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 250, 242, 0.74);
-  backdrop-filter: blur(2px);
 }
 
 .finish-sparks {
@@ -646,19 +708,21 @@ p {
   margin: 0 0 10px;
   font-family: var(--script);
   font-size: 2.45rem;
-  color: var(--ink);
+  color: var(--ivory);
 }
 
 .finish-content h2 {
   font-family: var(--script);
   font-size: 4.55rem;
   font-weight: 400;
+  color: var(--ivory);
 }
 
 .finish-content p {
   margin: 18px auto 0;
   font-family: var(--text-serif);
   font-weight: 800;
+  color: rgba(255, 250, 242, 0.78);
 }
 
 .reveal {
