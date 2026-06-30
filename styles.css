@@ -140,25 +140,13 @@ a {
 
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: 88svh;
   max-height: 960px;
   overflow: hidden;
   display: grid;
   align-items: start;
   justify-items: center;
   isolation: isolate;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  height: 9svh;
-  pointer-events: none;
-  background: linear-gradient(180deg, rgba(248, 244, 238, 0), rgba(248, 244, 238, 0.92));
 }
 
 .hero-photo,
@@ -178,7 +166,6 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: 54% 44%;
-  animation: slowPortrait 18s ease-in-out infinite alternate;
 }
 
 .hero-shade {
@@ -694,15 +681,6 @@ p {
   transform: translate(-50%, -50%) scale(1);
 }
 
-@keyframes slowPortrait {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.045) translate3d(0, -1.2%, 0);
-  }
-}
-
 @keyframes sparkleFloat {
   0%,
   100% {
@@ -914,7 +892,7 @@ p {
 
 @media (max-width: 820px) {
   .hero {
-    min-height: 100svh;
+    min-height: 88svh;
   }
 
   .hero-photo img {
