@@ -93,6 +93,10 @@ body::after {
   animation: sparkleDance 7.2s ease-in-out infinite;
 }
 
+main {
+  background: var(--dark-section);
+}
+
 .flying-sparkles {
   position: fixed;
   inset: 0;
@@ -307,7 +311,7 @@ p {
   position: relative;
   padding: 98px 0;
   color: var(--ivory);
-  background: var(--dark-section);
+  background: transparent;
   overflow: hidden;
 }
 
@@ -393,7 +397,7 @@ p {
   position: relative;
   padding: 90px 0;
   color: var(--ivory);
-  background: var(--dark-section);
+  background: transparent;
   overflow: hidden;
 }
 
@@ -457,9 +461,7 @@ p {
   position: relative;
   padding: 116px 0;
   color: var(--ivory);
-  background:
-    linear-gradient(135deg, rgba(23, 21, 19, 0.98), rgba(39, 35, 31, 0.96)),
-    var(--ink);
+  background: transparent;
   overflow: hidden;
 }
 
@@ -624,7 +626,7 @@ p {
 .place-section {
   padding: 84px 0;
   color: var(--ivory);
-  background: var(--dark-section);
+  background: transparent;
 }
 
 .place-grid {
@@ -674,7 +676,7 @@ p {
   padding: 122px 0 132px;
   color: var(--ivory);
   text-align: center;
-  background: var(--dark-section);
+  background: transparent;
   overflow: hidden;
 }
 
