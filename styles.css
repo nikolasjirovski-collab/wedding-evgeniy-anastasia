@@ -17,6 +17,9 @@
   --gold: #c7ad7c;
   --line: rgba(23, 21, 19, 0.16);
   --shadow: 0 28px 80px rgba(23, 21, 19, 0.22);
+  --dark-section:
+    linear-gradient(135deg, rgba(23, 21, 19, 0.98), rgba(39, 35, 31, 0.96)),
+    var(--ink);
   --text-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
   --text-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
   --script: "Bikham Cyr Script", cursive;
@@ -371,9 +374,7 @@ p {
   position: relative;
   padding: 90px 0;
   color: var(--ivory);
-  background:
-    linear-gradient(135deg, rgba(23, 21, 19, 0.98), rgba(39, 35, 31, 0.96)),
-    var(--ink);
+  background: var(--dark-section);
   overflow: hidden;
 }
 
@@ -604,7 +605,7 @@ p {
 .place-section {
   padding: 84px 0;
   color: var(--ivory);
-  background: var(--ink);
+  background: var(--dark-section);
 }
 
 .place-grid {
@@ -654,9 +655,7 @@ p {
   padding: 122px 0 132px;
   color: var(--ivory);
   text-align: center;
-  background:
-    linear-gradient(135deg, rgba(23, 21, 19, 0.98), rgba(39, 35, 31, 0.96)),
-    var(--ink);
+  background: var(--dark-section);
   overflow: hidden;
 }
 
