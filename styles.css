@@ -262,7 +262,7 @@ h2 {
   font-size: clamp(2.4rem, 7vw, 4.9rem);
   line-height: 1.02;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--ivory);
   text-wrap: balance;
 }
 
@@ -288,7 +288,8 @@ p {
 .details-section {
   position: relative;
   padding: 98px 0;
-  background: var(--paper);
+  color: var(--ivory);
+  background: var(--dark-section);
   overflow: hidden;
 }
 
@@ -299,9 +300,9 @@ p {
   height: 96px;
   pointer-events: none;
   background-image:
-    radial-gradient(circle at 28px 36px, rgba(199, 173, 124, 0.7) 0 1.6px, transparent 3px),
-    radial-gradient(circle at 118px 28px, rgba(199, 173, 124, 0.46) 0 1.2px, transparent 2.5px),
-    radial-gradient(circle at 180px 64px, rgba(255, 250, 242, 0.88) 0 1.2px, transparent 2.6px);
+    radial-gradient(circle at 28px 36px, rgba(255, 250, 242, 0.88) 0 1.6px, transparent 3px),
+    radial-gradient(circle at 118px 28px, rgba(199, 173, 124, 0.74) 0 1.2px, transparent 2.5px),
+    radial-gradient(circle at 180px 64px, rgba(255, 250, 242, 0.92) 0 1.2px, transparent 2.6px);
   background-position: center;
   background-size: 230px 96px;
   opacity: 0.62;
@@ -327,7 +328,7 @@ p {
 .place-card p,
 .finish-content p {
   max-width: 620px;
-  color: var(--muted);
+  color: rgba(255, 250, 242, 0.78);
 }
 
 .details-grid-single .details-copy p {
