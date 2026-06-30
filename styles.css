@@ -152,6 +152,24 @@ a {
   isolation: isolate;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: min(30svh, 260px);
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 21, 19, 0) 0%,
+    rgba(23, 21, 19, 0.38) 46%,
+    rgba(23, 21, 19, 0.92) 82%,
+    #171513 100%
+  );
+}
+
 .hero-photo,
 .hero-photo img,
 .hero-shade,
