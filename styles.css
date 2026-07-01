@@ -346,6 +346,20 @@ p {
   text-align: center;
 }
 
+.guest-greeting {
+  margin: 0 auto 24px;
+  color: var(--gold);
+  font-family: var(--text-serif);
+  font-size: clamp(1.55rem, 4.2vw, 2.55rem);
+  line-height: 1.18;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+.guest-greeting[hidden] {
+  display: none;
+}
+
 .details-copy p,
 .story-wrap p,
 .place-card p,

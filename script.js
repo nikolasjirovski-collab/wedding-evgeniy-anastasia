@@ -1,5 +1,34 @@
 const targetDate = new Date("2026-09-11T00:00:00+03:00").getTime();
 
+const guests = {
+  mama: "Дорогая мамочка",
+  "ekaterina-vladimir-varvara": "Екатерина, Владимир и Варвара",
+  "artem-inna-lyubov": "Артём, Инна и Любовь",
+  "mama-svetlana-dmitriy": "Мама Светлана и Дмитрий",
+  "babushka-galina": "Бабушка Галина",
+  "sergey-oksana-anastasia-alisa": "Сергей, Оксана, Анастасия и Алиса",
+  "vladimir-anastasia": "Владимир и Анастасия",
+  andrey: "Андрей",
+  arnold: "Арнольд",
+  vladislav: "Владислав",
+  nikita: "Никита",
+  "arina-maria": "Арина и Мария",
+  anna: "Анна",
+  alina: "Алина",
+  elizaveta: "Елизавета",
+  "polina-maxim": "Полина и Максим",
+  nigina: "Нигина",
+};
+
+const guestGreeting = document.querySelector("[data-guest-greeting]");
+const params = new URLSearchParams(window.location.search);
+const guestKey = params.get("guest") || params.get("to");
+
+if (guestGreeting && guestKey && guests[guestKey]) {
+  guestGreeting.textContent = guests[guestKey];
+  guestGreeting.hidden = false;
+}
+
 const countdown = {
   days: document.querySelector("[data-days]"),
   hours: document.querySelector("[data-hours]"),
