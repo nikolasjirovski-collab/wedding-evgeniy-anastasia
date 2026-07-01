@@ -423,10 +423,10 @@ p {
   align-content: center;
   justify-items: center;
   gap: 6px;
-  border: 1px solid rgba(255, 250, 242, 0.22);
-  border-radius: 8px;
-  background: rgba(255, 250, 242, 0.055);
-  box-shadow: inset 0 0 0 1px rgba(255, 250, 242, 0.035);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   animation: cardFloat 6s ease-in-out infinite;
 }
 
