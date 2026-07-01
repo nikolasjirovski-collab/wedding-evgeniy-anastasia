@@ -20,6 +20,7 @@
   --dark-section:
     linear-gradient(135deg, rgba(23, 21, 19, 0.98), rgba(39, 35, 31, 0.96)),
     var(--ink);
+  --section-title-size: clamp(2.35rem, 6vw, 3.95rem);
   --text-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
   --text-sans: "Inter", "Helvetica Neue", "Arial", sans-serif;
   --script: "Bikham Cyr Script", cursive;
@@ -736,6 +737,17 @@ p {
   font-size: 4.55rem;
   font-weight: 400;
   color: var(--ivory);
+}
+
+main section:not(.hero) :is(h2, h3) {
+  margin: 0;
+  font-family: var(--text-serif);
+  font-size: var(--section-title-size);
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--ivory);
+  text-wrap: balance;
 }
 
 .finish-content p {
